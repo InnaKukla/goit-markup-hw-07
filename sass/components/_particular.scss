@@ -1,0 +1,46 @@
+.section.particular {
+    padding-bottom: 0px;
+  }
+    
+  .particular-list {
+    display: flex;
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--second-text-color);
+      margin-bottom: 10px;
+      margin-top: 30px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+    }
+
+    &__button {
+      width: 270px;
+      height: 120px;
+      background: var(--background-main-color);
+      border-radius: 4px;
+      padding: 0;
+      border: transparent;
+    }
+}
+  
+  .button-icon__antenna,
+  .button-icon__clock,
+  .button-icon__graph,
+  .button-icon__astronaut {
+    width: 70px;
+    height: 70px;
+  }
+  

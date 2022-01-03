@@ -1,0 +1,120 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  padding: 25 0;
+}
+
+.header-nav-logo__studio {
+  margin-right: 93px;
+  color: var(--main-header-text-color);
+}
+
+.header-nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  &__item {
+    padding: 32px 0;
+  }
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.header-nav__link {
+  position: relative;
+  color: var(--main-header-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.current-link::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  display: block;
+  bottom: 0;
+}
+
+.header-nav__item .header-contacts__list a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-header-text-color);
+}
+
+.header-contacts__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.header-contacts-icon-link__mail,
+.header-contacts-icon-link__phone {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.header-contacts__icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+  margin-bottom: 0;
+  color: var(--main-icon-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-contacts {
+  margin-left: auto;
+}
+
+.header-contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-nav__link {
+  padding: 32px 0;
+}
+
+.link.contact {
+  margin-left: 10px;
+}
